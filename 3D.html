@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<head> 
+	<title>3D Vectors</title>
+	<link rel="stylesheet" href="styles.css"/>
+	
+	<!--- Information you don't want to display to users --> 
+
+</head>
+	
+	<body>
+		<!--- Enter code below this comment. Remember all code you want to display to users needs to be between the <body> tags --> 
+		
+		<li>
+			<a href="C:\Users\eajan\OneDrive\LIS 351 web\index.html">
+				Home
+			</a>
+		</li>
+		<li>
+			<a href="C:\Users\eajan\OneDrive\LIS 351 web\Statics\Statics.html">
+				Statics
+			</a>
+		</li>
+		<li>
+			<a href="C:\Users\eajan\OneDrive\LIS 351 web\Statics\Vectors\vectors.html">
+				Vectors
+			</a>
+		</li>
+	
+		<h1>
+			3D Vectors
+		</h1>
+		<h2>
+			Denotation of 3D vectors
+		</h2>
+		<p> 
+			3D vectors, like 2D vectors, can be written with pointed brackets but this time with 3 elementc inside such as (a,b,c). 
+			They can also be expressed using i, j, and k components. 
+			<math>
+				<math xmlns='http://www.w3.org/1998/Math/MathML'> <mover> <mrow> <mi> v </mi> </mrow> <mrow> <mo> &#x2192; <!-- rightwards arrow --> </mo> </mrow> </mover> <mo> = </mo> <mi> a </mi> <mover> <mrow> <mi> i </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> <mo> + </mo> <mi> b </mi> <mover> <mrow> <mi> j </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> <mo> + </mo> <mi> c </mi> <mover> <mrow> <mi> k </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> </math>
+			</math>
+			
+			3D vectors also have directional angles. These are angles from the vector to the positive x, y, and z axes, and can be used to
+			find the direction they are going in. The squares of the cosines of these angles added together should always equal 1:
+			
+		</p>
+		<h3>
+			What do these represent?
+		</h3>
+		<p>
+			a and b, similar to 2D vectors, represent the distance from the x and y axes, respectively. c represents the z-coordinate, or
+			the height above the x-y plane. 
+		</p>
+		
+		<h2>
+			Solving 3D vectors
+		</h2>
+		<p>
+			Solving 3D vectors can be a lot more complicated and there are a lot more you can do with them. Dot and cross product
+			are some examples of this extension. 
+		</p>
+		<h3>
+			Dot Product
+		</h3>
+		<p>
+			The dot product helps find a vector in the same direction as another vector. For example, you can dot a Force vector with a 
+			unit vector to find the amount of force acting in the direction of the unit vector.
+			Another use for dot product is finding the angle between two vectors. This can be done using the equation:
+			<math display= "block">
+				<math xmlns='http://www.w3.org/1998/Math/MathML'> <mrow> <mo> | </mo> <mi> a </mi> <mo> &#x00B7; <!-- middle dot --> </mo> <mi> b </mi> <mo> | </mo> </mrow> <mo> = </mo> <mrow> <mo> ∥ </mo> <mi> a </mi> <mo> ∥ </mo> </mrow> <mrow> <mo> ∥ </mo> <mi> b </mi> <mo> ∥ </mo> </mrow> <mi> cos </mi> <mi> &#x03B8; <!-- greek small letter theta --> </mi> </math>
+			</math>
+			where a and b are both vectors.
+		</p>
+		<p>
+			To find the dot product of two vectors
+			<math>
+				<math xmlns='http://www.w3.org/1998/Math/MathML'> <mo> &#x27E8; <!-- mathematical left angle bracket --> </mo> <msub> <mrow> <mi> x </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <mo> , </mo> <msub> <mrow> <mi> y </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <mo> , </mo> <msub> <mrow> <mi> z </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <mo> &#x27E9; <!-- mathematical right angle bracket --> </mo> </math>
+			</math>
+			
+			and 
+			<math>
+				<math xmlns='http://www.w3.org/1998/Math/MathML'> <mo> &#x27E8; <!-- mathematical left angle bracket --> </mo> <msub> <mrow> <mi> x </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> <mo> , </mo> <msub> <mrow> <mi> y </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> <mo> , </mo> <msub> <mrow> <mi> z </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> <mo> &#x27E9; <!-- mathematical right angle bracket --> </mo> </math>
+			</math>,
+			 multiply their like components and add together. The resultant of the dot product
+			is a scalar.
+		</p>
+		<math display="block">
+			<math xmlns='http://www.w3.org/1998/Math/MathML'> <msub> <mrow> <mi> x </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <msub> <mrow> <mi> x </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> <mo> + </mo> <msub> <mrow> <mi> y </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <msub> <mrow> <mi> y </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> <mo> + </mo> <msub> <mrow> <mi> z </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <msub> <mrow> <mi> z </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> </math>
+		</math>
+		<h3>
+			Cross Product
+		</h3>
+		<p>
+			Crossing two vectors gives a vector normal (or perpendicular) to both of them. It is typically used to find normal lines
+			of planes. The right had rule is also used with cross product.
+			Cross product is calculated using a matrix. See below:
+		</p>
+		<p>
+			An easier method to calculate cross product is by writing numbers vertically and performing multiplication in a pattern.
+			See Below:
+			
+		</p>
+	</body>
+
+</html>
