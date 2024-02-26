@@ -1,23 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<head> 
-<title>2D vectors</title>
+<link rel="stylesheet" href="styles2.css"/>
+<title>2D Vectors</title>
 
 	<!--- Information you don't want to display to users --> 
-	
 
-</head>
+
 	<h1> 2D Vectors</h1>
 	<nav>
-		<a href="C:\Users\eajan\OneDrive\LIS 351 web\index.html">
+		<li>
+			<a href="C:\Users\eajan\OneDrive\LIS 351 web\index.html">
 				Home
-		</a>
+			</a>
+		</li>
+		<li>
+			<a href="C:\Users\eajan\OneDrive\LIS 351 web\Statics\Statics.html">
+				Statics
+			</a>
+		</li>
+		<li>
+			<a href="C:\Users\eajan\OneDrive\LIS 351 web\Statics\Vectors\vectors.html">
+				Vectors
+			</a>
+		</li>
 	</nav>
 
-	<body>
-		<!--- Enter code below this comment. Remember all code you want to display to users needs to be between the <body> tags --> 
-		2D vectors
-	</body>
+	
+	
+<body>
+	<h2>
+		Denotation of 2D vectors
+	</h2>
+	<p>
+		 When writing 2D vectors, there are 2 main ways to express them. The first is by using pointed brackets
+		 with numbers separated by commas. 
+		 <math>
+			<math xmlns='http://www.w3.org/1998/Math/MathML'> <mo> &#x27E8; <!-- mathematical left angle bracket --> </mo> <mi> a </mi> <mo> , </mo> <mi> b </mi> <mo> &#x27E9; <!-- mathematical right angle bracket --> </mo> </math>
+		</math>
+		 Another way of writing 2D vectors is by using i and j components. i represents the magnitude in the x direction and j is the magnitude in the y direction.
+		 <math>
+			<math xmlns='http://www.w3.org/1998/Math/MathML'> <mover> <mrow> <mi> v </mi> </mrow> <mrow> <mo> &#x2192; <!-- rightwards arrow --> </mo> </mrow> </mover> <mo> = </mo> <mi> a </mi> <mover> <mrow> <mi> i </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> <mo> + </mo> <mi> b </mi> <mover> <mrow> <mi> j </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> </math>
+		</math>
+		 This way is seen a bit more when it comes to 3D vectors, but is still good to know.
+	</p>
+	
+	<h2>
+		Solving vectors: Equations to know
+	</h2>
+	
+	<p>
+		2D vectors are known for having a magnitude, and on direction denoted by theta, which is typically
+		the angle from the x axis. When solving equations with vectors, the best solution is to dissolve
+		the vector into components. Use trig rules with sine, cosine, and tangent to solve for missing 
+		sides and get the vector components in the directions of the x axis (i) and the y axis (j). 
+		
+		See the example below with right triangle ABC with C being the hypotenuse:
+	</p>
+	<math display="block">
+		<math xmlns='http://www.w3.org/1998/Math/MathML'> <mtable columnalign='left'> <mtr> <mtd> <mi> sin </mi> <mi> &#x03B8; <!-- greek small letter theta --> </mi> <mo> = </mo> <mfrac> <mrow> <mi> a </mi> </mrow> <mrow> <mi> c </mi> </mrow> </mfrac> </mtd> </mtr> <mtr> <mtd> <mi> cos </mi> <mi> &#x03B8; <!-- greek small letter theta --> </mi> <mo> = </mo> <mfrac> <mrow> <mi> b </mi> </mrow> <mrow> <mi> c </mi> </mrow> </mfrac> </mtd> </mtr> <mtr> <mtd> <mi> tan </mi> <mi> &#x03B8; <!-- greek small letter theta --> </mi> <mo> = </mo> <mfrac> <mrow> <mi> a </mi> </mrow> <mrow> <mi> b </mi> </mrow> </mfrac> </mtd> </mtr> <mtr> <mtd> <msup> <mrow> <mi> sin </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msup> <mi> &#x03B8; <!-- greek small letter theta --> </mi> <mo> + </mo> <msup> <mrow> <mi> cos </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msup> <mi> &#x03B8; <!-- greek small letter theta --> </mi> <mo> = </mo> <mn> 1 </mn> </mtd> </mtr> </mtable> </math>
+
+	</math>
+	<p>
+		Another way to break down vectors without finding all the components is to use the law of sines
+		or the law of cosines. This way can be faster if only needing to solve for a side or angle, but if 
+		a question goes further than that, it would be better to solve for components.
+		
+	</p>
+	<h3>Law of sines:</h3>
+	<p>
+		<math display="block">
+			<math xmlns='http://www.w3.org/1998/Math/MathML'> <mfrac> <mrow> <mi> sin </mi> <msub> <mrow> <mi> &#x03B8; <!-- greek small letter theta --> </mi> </mrow> <mrow> <mi> a </mi> </mrow> </msub> </mrow> <mrow> <mi> a </mi> </mrow> </mfrac> <mo> = </mo> <mfrac> <mrow> <mi> sin </mi> <msub> <mrow> <mi> &#x03B8; <!-- greek small letter theta --> </mi> </mrow> <mrow> <mi> b </mi> </mrow> </msub> </mrow> <mrow> <mi> b </mi> </mrow> </mfrac> </math>
+		</math>
+		The law of sines is the ratio of 2 sides of a triangle to the angles across from them. It can be used for either finding an angle or side
+		given another angle-side pair and either a side length or an angle.
+
+	</p>
+	<h3> Law of cosines: </h3>
+	<p>
+	<math display="block">
+		<math xmlns='http://www.w3.org/1998/Math/MathML'> <msup> <mrow> <mi> a </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msup> <mo> = </mo> <msup> <mrow> <mi> b </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msup> <mo> + </mo> <msup> <mrow> <mi> c </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msup> <mo> - </mo> <mn> 2 </mn> <mi> b </mi> <mi> c </mi> <mi> cos </mi> <mi> &#x03B8; <!-- greek small letter theta --> </mi> </math>
+	</math>
+		The law of cosines is typically used to find a missing side length given the lengths of the other 2 sides and the angle between them.
+	</p>
+	
+	<h2>
+		Practice problems:
+	</h2>
+	
+	<h4>
+		Making components
+	</h4>
+	<p>
+		Given the direction and magnitudes, find the components of the vectors in both 
+				 <math>
+			<math xmlns='http://www.w3.org/1998/Math/MathML'> <mo> &#x27E8; <!-- mathematical left angle bracket --> </mo> <mi> a </mi> <mo> , </mo> <mi> b </mi> <mo> &#x27E9; <!-- mathematical right angle bracket --> </mo> </math>
+		</math>
+		notation and 
+		 <math>
+			<math xmlns='http://www.w3.org/1998/Math/MathML'> <mover> <mrow> <mi> v </mi> </mrow> <mrow> <mo> &#x2192; <!-- rightwards arrow --> </mo> </mrow> </mover> <mo> = </mo> <mi> a </mi> <mover> <mrow> <mi> i </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> <mo> + </mo> <mi> b </mi> <mover> <mrow> <mi> j </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> </math>
+		</math>
+		notation. Round all answers to 2 decimal places
+	<p>
+	
+	<p>
+		<ol type="1">
+			<li>
+				<data value="<4.33, 2.5>, 4.33i + 2.5j">A vector with magnitude 5, 30 degrees above the positive x axis</data></li>
+			<li>
+				<data value="<4,3>"> A vector with magnitude 20 at an angle 40 degrees above the negative x axis</data>
+			</li>
+			<li>
+				<data value="wergkjw;erg">A vector with magnitude 3 at an angle of 230 degrees above the positive x axis</data>
+		</ol>
+		
+
+
+    <form action="PayslipServlet" method="get">
+
+        Last name:    <input type="text" name="lname" id="lname"><br/>
+        First name:   <input type="text" name="fname" id="fname"><br/>
+        Middle name:  <input type="text" name="mname" id ="mname"><br/>
+		<input type="submit" value="Submit">
+        Name:<script>document.write(document.getElementById('fname').value+" "+document.getElementById('mname').value+""+document.getElementById('lname').value);</script>
+        
+    </form>
+
+
+</body>
 
 </html>
