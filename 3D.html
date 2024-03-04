@@ -60,7 +60,7 @@
 				Denotation of 3D vectors
 			</h2>
 			<p> 
-				3D vectors, like 2D vectors, can be written with pointed brackets but this time with 3 elementc inside such as (a,b,c). 
+				3D vectors, like 2D vectors, can be written with pointed brackets but this time with 3 elementc inside such as  
 				<math xmlns='http://www.w3.org/1998/Math/MathML'> <mo> &#x27E8; <!-- mathematical left angle bracket --> </mo> <mi> a </mi> <mo> , </mo> <mi> b </mi> <mo> , </mo> <mi> c </mi> <mo> &#x27E9; <!-- mathematical right angle bracket --> </mo> </math>
 				They can also be expressed using i, j, and k components. 
 				<math>
@@ -80,6 +80,15 @@
 				<p></p>
 				Phi, however, is only measured up to 180 degrees, or <math xmlns='http://www.w3.org/1998/Math/MathML'> <mi> &#x03C0; <!-- greek small letter pi --> </mi> </math> radians.
 			</p>
+			<article>
+				<img src="8.PNG" class="pic" alt="Vector with x, y, and z points" />
+			</article>
+			<article>
+				<img src="9.PNG" class="pic" alt="Vector with angles theta and phi" />
+			</article>
+			<article>
+				<img src="10.PNG" class="pic" alt="Vector with directional cosine angles" />
+			</article>
 		</section>	
 		<section> <!--Solving 3D Vectors-->
 			<main>
@@ -107,6 +116,7 @@
 					</math>,
 					 multiply their like components and add together. The resultant of the dot product
 					is a scalar.
+					If the dot product between two vectors equals zero, the vectors are perpendicular or orthogonal to each other.
 				</p>
 				<math display="block">
 					<math xmlns='http://www.w3.org/1998/Math/MathML'> <msub> <mrow> <mi> x </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <msub> <mrow> <mi> x </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> <mo> + </mo> <msub> <mrow> <mi> y </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <msub> <mrow> <mi> y </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> <mo> + </mo> <msub> <mrow> <mi> z </mi> </mrow> <mrow> <mn> 1 </mn> </mrow> </msub> <msub> <mrow> <mi> z </mi> </mrow> <mrow> <mn> 2 </mn> </mrow> </msub> </math>
@@ -119,6 +129,7 @@
 						<math xmlns='http://www.w3.org/1998/Math/MathML'> <mrow> <mo> | </mo> <mi> a </mi> <mo> &#x00B7; <!-- middle dot --> </mo> <mi> b </mi> <mo> | </mo> </mrow> <mo> = </mo> <mrow> <mo> ∥ </mo> <mi> a </mi> <mo> ∥ </mo> </mrow> <mrow> <mo> ∥ </mo> <mi> b </mi> <mo> ∥ </mo> </mrow> <mi> cos </mi> <mi> &#x03B8; <!-- greek small letter theta --> </mi> </math>
 					</math>
 					where a and b are both vectors. 
+				
 				</p>
 				
 			</article>
@@ -129,6 +140,7 @@
 				<p>
 					Crossing two vectors gives a vector normal (or perpendicular) to both of them. It is typically used to find normal lines
 					of planes. The right had rule is also used with cross product.
+					If the cross product between two vectors is zero, the vectors are parallel to each other.
 					Cross product is calculated using a matrix. See below:
 				</p>
 				<p>
@@ -136,7 +148,8 @@
 					See Below:
 					
 				</p>
-				<!-- INSERT A VIDEO OR SERIES OF IMAGES????-->
+				<img src="11.PNG" class="pic" alt="cross product example" />
+				
 			</article>
 		</section>
 		<h2> Recap </h2>
@@ -156,12 +169,56 @@
 			<dt> Cross Product Formula </dt>
 			<dd> <!--FILL IN--></dd>
 			<!--FINISH EQUATIONS-->
-			
-		
+		</dl>
 				
-		
-		
-		<section> <!--Practice Problems-->
+		<section class='problems'> <!--Practice Problems-->
+			<h4> Dot Prodcut </h4>
+			<p> Find the dot product of the given vectors </p>
+			<ol type='1'>
+				<li>
+					<p> A = 7i+2j+8k and B = 3i-2j+9k</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('99')"/></p>
+				</li>
+				<li>
+					<p>(3, 6, 3) and (2, 8, 5)</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('69')"/></p>
+				</li>
+				<li>
+					<p> V= 5j-2k and v= 10i+2j+5k</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('0')"/></p>
+				</li>
+			</ol>
+			<p> Find the angle between the given vectors. Round answers to 1 decimal place. </p>
+			<ol type='1'>
+				<li>
+					<p> A = 7i+2j+8k and B = 3i-2j+9k</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('19.3 degrees')"/></p>
+				</li>
+				<li>
+					<p>(3, 6, 3) and (2, 8, 5)</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('13.2 degrees')"/></p>
+				</li>
+				<li>
+					<p> V= 5j-2k and v= 10i+2j+5k</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('90 degrees')"/></p>
+				</li>
+			</ol>
+			<h4> Cross Product </h4>
+			<p> Find the cross product of the given vectors </p>
+			<ol type='1'>
+				<li>
+					<p> A = 7i+2j+8k and B = 3i-2j+9k</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('<34, -39, -20>')"/></p>
+				</li>
+				<li>
+					<p>(3, 6, 3) and (2, 8, 5)</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('<6, -9, 12')"/></p>
+				</li>
+				<li>
+					<p> V= 5j-2k and v= 10i+2j+5k</p>
+					<p><input type="submit" value=" Show Answer" onclick="alert('<29, 20, -50>')"/></p>
+				</li>
+			</ol>
 		</section>
 		<footer>
 			<p> Created by Elizabeth Janicek </p>
