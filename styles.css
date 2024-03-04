@@ -1,3 +1,4 @@
+
 h1 {
 	color:#B27BDA;
 	text-align: left;
@@ -91,7 +92,7 @@ footer{
 	}
 }
 .problems{
-	background-color: #f2fde7;
+	background-color: #d8cce3;
 	padding:10px;
 	margin:10px;
 }
@@ -102,4 +103,18 @@ dd {
 
 dd {
   margin-bottom: 1em;
+}
+.title{
+	margin: 5px;
+	color: #be60d5;
+	text-align:center;
+	
+}
+.tag{
+		font-size: 20px;
+		color:#de70f8;
+		text-align:center;
+	}
+.pic{
+	width: 250px;
 }
