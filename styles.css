@@ -73,6 +73,7 @@ article{
 	width: 48%;
 	background-color:#cee8b5;
 	margin: 1%;
+	padding: 5px;
 
 }
 aside{
@@ -105,6 +106,9 @@ dd {
 dd {
   margin-bottom: 1em;
 }
+dt{
+	font-weight: bold;
+}
 .title{
 	margin: 5px;
 	color: #be60d5;
@@ -118,10 +122,11 @@ dd {
 	}
 .pic{
 	width: 250px;
+	text-align:center;
 }
 .three{
 	float: left;
 	width: 31%;
-	background-color:blue;
+	background-color:#cee8b5;
 	margin: 1%;
 }
