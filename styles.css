@@ -118,3 +118,9 @@ dd {
 .pic{
 	width: 250px;
 }
+.three{
+	float: left;
+	width: 31%;
+	background-color:#cee8b5;
+	margin: 1%;
+}
