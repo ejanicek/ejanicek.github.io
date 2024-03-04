@@ -4,82 +4,136 @@
 <head> 
 <title>Vectors</title>
 	<link rel="stylesheet" href="styles.css"/>
+
 	<!--- Information you don't want to display to users --> 
 
 </head>
 
 	<body>
 		<!--- Enter code below this comment. Remember all code you want to display to users needs to be between the <body> tags --> 
-		<nav>
-			<li>
-				<a href="https://ejanicek.github.io/index.html">
-					Home
-					</a>
-			</li>
-			<li>
-				<a href="https://ejanicek.github.io/statics.html">
-					Statics
-				</a>
-			</li>
-			<li>
-				<a href="https://ejanicek.github.io/2d.html">
-					2D
-				</a>
-			</li>
-			<li>
-				<a href="https://ejanicek.github.io/3D.html">
-					3D
-				</a>
-			</li>
-
-		</nav>
-		<h1>
-			Vectors
-		</h1>
+		<header>
+			<nav>
+				<aside>
+						<p>
+							<a href="index.html">
+								Home
+							</a>
+						</p>
+						<p>
+							<a href="statics.html">
+								Statics
+							</a>
+						</p>
+						<p class="navsub">
+							<a href="forces.html">
+								Forces
+							</a>
+						</p>
+						<p class="navsub">
+							<a href="vectors.html">
+								Vectors
+							</a>
+						</p>
+						<p class="navsubs">
+							<a href="2d.html">
+								2D
+							</a>
+						</p>
+						<p class="navsubs">
+							<a href="3D.html">
+								3D
+							</a>
+						</p>
+						<p>
+							<a href="math_320.html">
+								Math 320
+							</a>
+						</p>
+						<p>
+						</p>
+				</aside>
+			</nav>
+			<h1> Vectors </h1>
+		</header>
 		
-		<h2>
-			What is a vector?
-		</h2>
-			A vector is a value (or magnitude) with a corresponding direction. This direction can by in terms of x and y, sometimes using theta,
-			for 2D vectors, or with 3D vectors can be in x,y, and z, using theta and phi as directional angles. 
-			Vectors are shown graphically starting at a point in space, usually the origin, and have a head, which looks like an arrow, and a
-			tail, the other end of the vector.
-		<h2>
-			Vector addition and subtraction
-		</h2>
-		<p>
-			Vectors can be added using many different methods, but most commonly the head to tail method. This is done by putting
-			the tail of one vector to the head of the other and drawing a new vector from the tail of the first vector to the head 
-			the second. it can also be done by adding together the alligned components
-		</p>
+		<section> <!--What is a vector-->
+			<h2>
+				What is a vector?
+			</h2>
+			<main>
+				<p>
+					A vector is a value (or magnitude) with a corresponding direction. This direction can by in terms of x and y, sometimes using theta,
+					for <a href="2d.html">2D vectors</a>, or with <a href="3D.html">3D vectors</a> can be in x,y, and z, using theta and phi as directional angles. 
+					Vectors are shown graphically starting at a point in space, usually the origin, and have a head, which looks like an arrow, and a
+					tail, the other end of the vector.
+				</p>
+			</main>
+			<!-- INSERT IMAGE HERE-->
+			<img src="2.PNG" alt="triangle with sides labeled a, b, and c"/>
+		</section>
+		<section> <!--Unit Vectors-->
+			<h2> Unit Vectors </h2>
+			<main>
+				<h3>
+					What is a unit vector? What is it used for?
+				</h3>
+				<p>
+					A unit vector is a vector with a magnitude (or size) equal to 1. These are extremely useful when needing to convert units.
+					For example, changing a position vector into a Force vector. Unit vectors are also helpful to find vectors in the same direction
+					using dot product, or simply mulitplying a unit vector by a scalar to give it a new magnitude.
+				</p>
+			</main>
+			<article>
+				<h4> How to find a unit vector </h4>
+				<p>
+					A unit vector can be found by dividing each component of a vector by the magnitude of the entire vector. To find the magnitude of a 
+					vector, square each of the components, add them together, and take the square root. The magnitude of a vector is written
+					using vertical lines around a vector name: |v|
+					The magnitude of a vector will always be a scalar and have no direction corresponding to it. 
+					The unit vector, on the other hand, is used for its direction, and not the magnitude.
+					
+					<math display="block">
+						<math xmlns='http://www.w3.org/1998/Math/MathML'> <mover> <mrow> <mi> u </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> <mo> = </mo> <mfrac> <mrow> <mover> <mrow> <mi> r </mi> </mrow> <mrow> <mo> &#x2192; <!-- rightwards arrow --> </mo> </mrow> </mover> </mrow> <mrow> <mrow> <mo> | </mo> <mover> <mrow> <mi> r </mi> </mrow> <mrow> <mo> &#x2192; <!-- rightwards arrow --> </mo> </mrow> </mover> <mo> | </mo> </mrow> </mrow> </mfrac> </math>
+					</math>
+				</p>
+			</article>
+			<article>
+				<img src="3.PNG" class='pic' alt="unit vector 45 degrees above the x axis"/>
+			</article>
+		</section>
+		<section>	<!-- Vector addition and scalar multiplication-->
+			<h2>
+				Vector addition and subtraction
+			</h2>
+			<p>
+				Vectors can be added using many different methods, but most commonly the head to tail method. This is done by putting
+				the tail of one vector to the head of the other and drawing a new vector from the tail of the first vector to the head 
+				the second. It can also be done by adding together the alligned components and keeping it in vector form.
+			</p>
+			<article>
+				<img src="5.PNG" class='pic' alt="vector a: (2,2) and vector b (1,3)" />
+			</article>
+			<article>
+				<img src="6.PNG" class='pic' alt="vector addition between a and b" />
+			</article>
+			<article>
+				<img src="7.PNG" class='pic' alt="vector a minus vector b"/>
+			</article>
+			<h2>	
+				Scalar Multiplication
+			</h2>
+			<p>
+				Scalar multiplication with vectors is simply multiplying each of the compnents by a scalar(or number) and keeping it in vector
+				form. This causes the vector to change length by a proportion of the scalar.
+			</p>
+			<img src='4.PNG' class='pic' alt="graph showing vector a, vector 2a, and vector -a" />
+		</section>
 		
-		<h2>
-			Unit Vectors
-		</h2>
 		
-		<h3>
-			What is a unit vector? What is it used for?
-		</h3>
-		<p>
-			A unit vector is a vector with a magnitude (or size) equal to 1. These are extremely useful when needing to convert units.
-			For example, changing a position vector into a Force vector. Unit vectors are also helpful to find vectors in the same direction
-			using dot product, or simply mulitplying a unit vector by a scalar to give it a new magnitude.
-		</p>
-		<h3>
-			How to find a unit vector
-		</h3>
-		<p>
-			A unit vector can be found by dividing each component of a vector by the magnitude of the entire vector. To find the magnitude of a 
-			vector, square each of the components, add them together, and take the square root. The magnitude of a vector is written
-			using vertical lines around a vector name: |v|
-			The magnitude of a vector will always be a scalar and have no direction corresponding to it. 
-			The unit vector, on the other hand, is used for its direction, and not the magnitude.
-			
-			<math display="block">
-				<math xmlns='http://www.w3.org/1998/Math/MathML'> <mover> <mrow> <mi> u </mi> </mrow> <mrow> <mo> &#x2227; <!-- logical and --> </mo> </mrow> </mover> <mo> = </mo> <mfrac> <mrow> <mover> <mrow> <mi> r </mi> </mrow> <mrow> <mo> &#x2192; <!-- rightwards arrow --> </mo> </mrow> </mover> </mrow> <mrow> <mrow> <mo> | </mo> <mover> <mrow> <mi> r </mi> </mrow> <mrow> <mo> &#x2192; <!-- rightwards arrow --> </mo> </mrow> </mover> <mo> | </mo> </mrow> </mrow> </mfrac> </math>
-			</math>
-		</p>
-
+		<footer>
+			<p> Created by Elizabeth Janicek </p>
+			<p> Contact at ejanicek@wisc.edu for questions </p>
+		</footer>
 
 	</body>
 
