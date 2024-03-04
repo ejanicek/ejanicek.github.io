@@ -33,6 +33,7 @@ li{
 	}
 body{
 	background-color: #f2fde7;
+	
 }
 nav{
 	text-align:left;
@@ -57,16 +58,18 @@ section{
 	background-color: #dbf0c7;
 	padding: 5px;
 	margin: 5px;
+	text-align: center;
 	h2{
 		text-align:center;
 		margin: 5px;
 	}
+	
 }
 main{
 	background-color: #cee8b5;
 	padding:5px;
 	margin: 5px;
-	text-align:center;
+	
 }
 article{
 	float: left;
@@ -88,7 +91,7 @@ aside{
 }
 footer{
 	p{
-		float:left;
+		float: left;
 		margin-left:20%;
 		margin-bottom:2px;
 	}
@@ -122,11 +125,13 @@ dt{
 	}
 .pic{
 	width: 250px;
-	vertical-align:center;
+	align-content: center;
+	padding: 5px;
+
 }
 .three{
 	float: left;
-	width: 31%;
+	width: 29%;
 	background-color:#cee8b5;
 	margin: 1%;
 }
