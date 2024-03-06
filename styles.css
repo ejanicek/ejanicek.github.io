@@ -82,12 +82,11 @@ aside{
 	margin-left: 0.5rem;
 	margin:5px;
 }
-footer{
-	p{
+.footer{
 		float: left;
 		margin-left:20%;
 		margin-bottom:2px;
-	}
+	
 }
 .problems{
 	background-color: #d8cce3;
